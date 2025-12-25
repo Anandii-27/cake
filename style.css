@@ -327,5 +327,35 @@ body {
 .nav-links a.active {
     border-bottom: 2px solid #8b1e3f;
 }
+.menu-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.menu-item {
+    width: 260px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+
+    text-decoration: none;
+    color: #8b1e3f;
+    font-size: 20px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
 
 
