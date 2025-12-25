@@ -407,6 +407,57 @@ body {
     transform: translateY(-6px);
     box-shadow: 0 12px 28px rgba(0,0,0,0.18);
 }
+/* MENU PAGE */
+.menu-page {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.menu-page h1 {
+    font-size: 42px;
+    color: #8b1e3f;
+    margin-bottom: 5px;
+}
+
+.menu-note {
+    font-size: 15px;
+    opacity: 0.7;
+    margin-bottom: 40px;
+}
+
+/* DRY CAKES MENU */
+.dry-menu {
+    max-width: 650px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.menu-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 14px 0;
+    font-size: 18px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.menu-row:last-child {
+    border-bottom: none;
+}
+
+.cake-name {
+    font-weight: 500;
+    color: #333;
+}
+
+.cake-price {
+    font-weight: 600;
+    color: #8b1e3f;
+}
+
 
 
 
