@@ -481,6 +481,63 @@ body {
     display: grid;
     grid-template-columns: 1fr 100px 100px;
 }
+/* MENU PAGE */
+.menu-page {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.menu-page h1 {
+    font-size: 40px;
+    color: #8b1e3f;
+    margin-bottom: 8px;
+}
+
+.menu-note {
+    font-size: 15px;
+    opacity: 0.75;
+    margin-bottom: 35px;
+}
+
+/* REGULAR CAKES TABLE */
+.regular-menu {
+    max-width: 850px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.menu-row {
+    display: grid;
+    grid-template-columns: 1fr 120px 120px;
+    align-items: center;
+    padding: 14px 0;
+    font-size: 18px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.menu-row span {
+    text-align: center;
+}
+
+.menu-row span:first-child {
+    text-align: left;
+    font-weight: 500;
+}
+
+.menu-row.header {
+    font-weight: 600;
+    color: #8b1e3f;
+    border-bottom: 2px solid #aaa;
+}
+
+.menu-row:last-child {
+    border-bottom: none;
+}
+
+
 
 
 
