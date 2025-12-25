@@ -457,6 +457,31 @@ body {
     font-weight: 600;
     color: #8b1e3f;
 }
+/* REGULAR CAKES TABLE */
+.regular-menu {
+    max-width: 750px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.menu-header {
+    display: grid;
+    grid-template-columns: 1fr 100px 100px;
+    font-weight: 600;
+    color: #8b1e3f;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 100px 100px;
+}
+
 
 
 
