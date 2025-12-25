@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cupcakes | Sandhya’s Cakes</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #ffffff;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 50px;
+            background: #fff;
+        }
+
+        .logo {
+            font-family: 'Pacifico', cursive;
+            font-size: 26px;
+            color: #8b1e3f;
+        }
+
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #8b1e3f;
+            font-weight: 500;
+        }
+
+        .order-btn {
+            background: #8b1e3f;
+            color: #fff;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        /* TITLE */
+        .title {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .title h1 {
+            font-size: 36px;
+            color: #8b1e3f;
+            margin-bottom: 5px;
+        }
+
+        .title p {
+            font-size: 15px;
+            color: #666;
+        }
+
+        /* MENU CARD */
+        .menu-card {
+            width: 60%;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 14px;
+            padding: 30px 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .menu-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 0;
+            border-bottom: 1px dashed #ddd;
+            font-size: 16px;
+        }
+
+        .menu-row:last-child {
+            border-bottom: none;
+        }
+
+        .price {
+            color: #8b1e3f;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .menu-card {
+                width: 90%;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Sandhya’s Cakes</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <a class="order-btn" href="https://wa.me/919538014000" target="_blank">Order Now</a>
+</nav>
+
+<!-- TITLE -->
+<div class="title">
+    <h1>Cupcakes</h1>
+    <p>Price per piece</p>
+</div>
+
+<!-- CUPCAKE LIST -->
+<div class="menu-card">
+    <div class="menu-row">
+        <span>Vanilla Cupcake</span>
+        <span class="price">₹120</span>
+    </div>
+
+    <div class="menu-row">
+        <span>Chocolate Delight</span>
+        <span class="price">₹140</span>
+    </div>
+
+    <div class="menu-row">
+        <span>Red Velvet Cupcake</span>
+        <span class="price">₹150</span>
+    </div>
+
+    <div class="menu-row">
+        <span>Rainbow Cupcake</span>
+        <span class="price">₹150</span>
+    </div>
+
+    <div class="menu-row">
+        <span>Choco Lava Cupcake</span>
+        <span class="price">₹160</span>
+    </div>
+
+    <div class="menu-row">
+        <span>Biscoff Cupcake</span>
+        <span class="price">₹180</span>
+    </div>
+
+    <div class="menu-row">
+        <span>Nutella Cupcake</span>
+        <span class="price">₹180</span>
+    </div>
+
+    <div class="menu-row">
+        <span>Lemon Cupcake</span>
+        <span class="price">₹130</span>
+    </div>
+
+    <div class="menu-row">
+        <span>Funfetti Cupcake</span>
+        <span class="price">₹150</span>
+    </div>
+</div>
+
+</body>
+</html>
