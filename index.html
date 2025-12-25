@@ -36,20 +36,68 @@
     </div>
 
     <!-- RIGHT -->
-    <div class="hero-right">
-        <h3>SIMPLE</h3>
-        <img src="pastry.png" alt="pastry image">
-        <a href="#menu" class="view-btn">VIEW PRODUCTS</a>
+   <div class="hero-right">
+    <h3 id="category-title">REGULAR CAKES</h3>
 
-        <div class="arrows">
-            <span>‹</span>
-            <span>›</span>
-        </div>
+    <img id="category-image" src="images/regular-cake.png" alt="Cake">
+
+    <a id="viewLink" href="regular-cakes.html" class="view-btn">
+        VIEW PRODUCTS
+    </a>
+
+    <div class="arrows">
+        <button onclick="prevCategory()">‹</button>
+        <button onclick="nextCategory()">›</button>
     </div>
+</div>
+
 </section>
+<script>
+const categories = [
+    {
+        name: "REGULAR CAKES",
+        image: "regular-cake.png",
+        link: "regular-cakes.html"
+    },
+    {
+        name: "PREMIUM CAKES",
+        image: "premium-cake.png",
+        link: "premium-cakes.html"
+    },
+    {
+        name: "DRY CAKES",
+        image: "dry-cake.png",
+        link: "dry-cakes.html"
+    },
+    {
+        name: "CUPCAKES",
+        image: "cupcake.png",
+        link: "cupcakes.html"
+    }
+];
+
+let index = 0;
+
+function updateCategory() {
+    document.getElementById("category-title").innerText = categories[index].name;
+    document.getElementById("category-image").src = categories[index].image;
+    document.getElementById("viewLink").href = categories[index].link;
+}
+
+function nextCategory() {
+    index = (index + 1) % categories.length;
+    updateCategory();
+}
+
+function prevCategory() {
+    index = (index - 1 + categories.length) % categories.length;
+    updateCategory();
+}
+</script>
 
 </body>
 </html>
+
 
 
 
