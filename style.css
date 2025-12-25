@@ -536,6 +536,33 @@ body {
 .menu-row:last-child {
     border-bottom: none;
 }
+/* Arrow buttons styling */
+.arrows {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.arrows button {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #8b1e3f;
+    background-color: transparent;
+    color: #8b1e3f;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrows button:hover {
+    background-color: #8b1e3f;
+    color: white;
+    transform: scale(1.1);
+}
+
 
 
 
