@@ -88,10 +88,23 @@ const categories = [
 let index = 0;
 
 function updateCategory() {
-    document.getElementById("category-title").innerText = categories[index].name;
-    document.getElementById("category-image").src = categories[index].image;
-    document.getElementById("viewLink").href = categories[index].link;
+    const title = document.getElementById("category-title");
+    const img = document.getElementById("category-image");
+    const link = document.getElementById("viewLink");
+
+    img.style.opacity = "0";
+    img.style.transform = "scale(0.95)";
+
+    setTimeout(() => {
+        title.innerText = categories[index].name;
+        img.src = categories[index].image;
+        link.href = categories[index].link;
+
+        img.style.opacity = "1";
+        img.style.transform = "scale(1)";
+    }, 200);
 }
+
 
 function nextCategory() {
     index = (index + 1) % categories.length;
@@ -106,6 +119,7 @@ function prevCategory() {
 
 </body>
 </html>
+
 
 
 
