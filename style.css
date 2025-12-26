@@ -120,11 +120,8 @@ body {
 /* HERO */
 .hero {
     display: flex;
-    height: calc(100vh - 80px); /* navbar height */
+    height: 100vh;
 }
-
-
-
 /* LEFT SIDE */
 .hero-left {
     width: 60%;
@@ -154,9 +151,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;  /* ✅ no vertical centering */
+    padding-top: 120px;           /* ✅ controlled spacing from top */
     gap: 20px;
 }
+
 
 .hero-right h3 {
     color: #8b1e3f;
@@ -644,6 +643,11 @@ body {
 #category-image {
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
+.arrows {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
 
 
 
