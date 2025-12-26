@@ -600,6 +600,18 @@ body {
     transform: translateY(0);
   }
 }
+/* Button hover effect */
+.view-btn,
+.order-btn {
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover,
+.order-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(128, 0, 0, 0.25);
+}
+
 
 
 
