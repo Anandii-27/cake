@@ -577,6 +577,17 @@ body {
     transform: translateY(0);
   }
 }
+/* Floating cake animation */
+.hero-cake {
+  animation: floatCake 6s ease-in-out infinite;
+}
+
+@keyframes floatCake {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
 
 
 
