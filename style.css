@@ -119,11 +119,10 @@ body {
 
 /* HERO */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 90vh;
+    display: flex;
+    height: calc(100vh - 80px); /* navbar height */
 }
+
 
 
 /* LEFT SIDE */
@@ -645,6 +644,7 @@ body {
 #category-image {
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
+
 
 
 
