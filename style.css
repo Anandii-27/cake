@@ -6,16 +6,26 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    padding-top: 70px;   /* SPACE FOR FIXED NAVBAR */
 }
 
 /* NAVBAR */
 .navbar {
+    position: fixed;          /* KEEP NAVBAR ON TOP */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 18px 40px;
+
     background: #fff;
+    z-index: 1000;            /* VERY IMPORTANT */
 }
+
 
 .logo {
     font-family: 'Pacifico', cursive;
@@ -109,9 +119,12 @@ body {
 
 /* HERO */
 .hero {
-    display: flex;
-    height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90vh;
 }
+
 
 /* LEFT SIDE */
 .hero-left {
@@ -629,6 +642,7 @@ body {
   padding: 40px;
   text-align: center;
 }
+
 
 
 
