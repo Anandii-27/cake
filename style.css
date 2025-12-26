@@ -587,6 +587,20 @@ body {
   50% { transform: translateY(-12px); }
   100% { transform: translateY(0); }
 }
+/* Hero text animation */
+.hero-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: textReveal 1.2s ease forwards;
+}
+
+@keyframes textReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 
