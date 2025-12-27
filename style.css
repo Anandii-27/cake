@@ -89,10 +89,17 @@ body {
   position: absolute;
   bottom: 40px;
   left: 40px;
-  font-size: 57px;
+
+  font-size: 72px;        /* 🔥 Bigger text */
+  font-weight: 600;
+
   color: white;
-  line-height: 1.1;
-  letter-spacing: 3px;
+  line-height: 1.05;     /* tighter lines */
+  letter-spacing: 4px;
+
+  max-width: 520px;      /* allows wrapping nicely */
+}
+
 
   opacity: 0;
   transform: translateY(30px);
@@ -302,6 +309,7 @@ body {
   text-align: left;
   color: #000;
 }
+
 
 
 
