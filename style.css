@@ -255,3 +255,20 @@ body {
   color: #8b1e3f;
   font-weight: 600;
 }
+/* FIX VIEW PRODUCTS + ARROWS ALIGNMENT */
+.hero-right {
+  position: relative;
+}
+
+.hero-right .view-btn {
+  margin-top: 20px;
+}
+
+.hero-right .arrows {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
