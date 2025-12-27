@@ -7,6 +7,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,129 +15,42 @@
 <!-- NAVBAR -->
 <nav class="navbar">
     <div class="logo">Sandhya’s Cakes</div>
-    <ul class="nav-links">
-        <li><a href="images.html">Images</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="Contact">Contact</a></li>
-    </ul>
-    <a href="https://wa.me/919404030979?text=Hello! I want to order a cake 🎂"
-   class="order-btn"
-   target="_blank">
-   Order Now
-</a>
 
+    <ul class="nav-links">
+        <li><a href="#">Images</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <a href="https://wa.me/919404030979?text=Hello! I want to order a cake 🎂"
+       class="order-btn" target="_blank">Order Now</a>
 </nav>
 
 <!-- HERO SECTION -->
 <section class="hero">
-
-    <!-- LEFT -->
+    <!-- LEFT IMAGE -->
     <div class="hero-left">
-        <img src="cake1.jpeg" class="hero-cake">
-        <div class="hero-text">
-            <h1>FRESH<br>HOMEMADE<br>DELICIOUS</h1>
-        </div>
-    </div> <!-- ✅ hero-left CLOSED -->
-
-    <!-- RIGHT -->
-    <div class="hero-right">
-        <h3 id="category-title">REGULAR CAKES</h3>
-
-        <img id="category-image" src="regular-cake.png" alt="Cake">
-
-        <a id="viewLink" href="regular-cakes.html" class="view-btn">
-            VIEW PRODUCTS
-        </a>
-
-        <div class="arrows">
-            <button onclick="prevCategory()">‹</button>
-            <button onclick="nextCategory()">›</button>
-        </div>
+        <h1>
+            FRESH <br>
+            HOMEMADE <br>
+            DELICIOUS
+        </h1>
     </div>
 
+    <!-- RIGHT CONTENT -->
+    <div class="hero-right">
+        <h3>CHEESECAKE JARS</h3>
+
+        <img src="images/cheesecake-jar.png" alt="Cheesecake Jar">
+
+        <button class="view-btn">VIEW PRODUCTS</button>
+
+        <div class="arrows">
+            <span>&lsaquo;</span>
+            <span>&rsaquo;</span>
+        </div>
+    </div>
 </section>
-
-<script>
-const categories = [
-    {
-        name: "REGULAR CAKES",
-        image: "regular-cake.png",
-        link: "regular-cakes.html"
-    },
-    {
-        name: "PREMIUM CAKES",
-        image: "premium-cake.png",
-        link: "premium-cakes.html"
-    },
-    {
-        name: "DRY CAKES",
-        image: "dry-cake.png",
-        link: "dry-cakes.html"
-    },
-    {
-        name: "CUPCAKES",
-        image: "cupcake.png",
-        link: "cupcakes.html"
-    },
-     {
-        name: "CHEESECAKE JARS",
-        image: "cheesecake.png",
-        link: "cheesecake-jars.html"
-    }
-];
-
-let index = 0;
-
-function updateCategory() {
-    const title = document.getElementById("category-title");
-    const img = document.getElementById("category-image");
-    const link = document.getElementById("viewLink");
-
-    img.style.opacity = "0";
-    img.style.transform = "scale(0.95)";
-
-    setTimeout(() => {
-        title.innerText = categories[index].name;
-        img.src = categories[index].image;
-        link.href = categories[index].link;
-
-        img.style.opacity = "1";
-        img.style.transform = "scale(1)";
-    }, 200);
-}
-
-
-function nextCategory() {
-    index = (index + 1) % categories.length;
-    updateCategory();
-}
-
-function prevCategory() {
-    index = (index - 1 + categories.length) % categories.length;
-    updateCategory();
-}
-</script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
