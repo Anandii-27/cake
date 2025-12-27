@@ -103,18 +103,18 @@ body {
   bottom: 40px;
   left: 40px;
 
-  font-size: 42px;      /* 👈 reduced size */
+  font-size: 42px;   /* smaller text */
   font-weight: 700;
   color: white;
 
   line-height: 1.15;
   letter-spacing: 2px;
-}
 
   opacity: 0;
   transform: translateY(30px);
   animation: textReveal 1.2s ease forwards;
 }
+
 
 @keyframes textReveal {
   to {
@@ -237,6 +237,7 @@ body {
   box-shadow: 0 20px 45px rgba(139, 30, 63, 0.35);
   background: #f6efdd;
 }
+
 
 
 
