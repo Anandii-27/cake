@@ -102,10 +102,14 @@ body {
   position: absolute;
   bottom: 40px;
   left: 40px;
-  font-size: 64px;
+
+  font-size: 42px;      /* 👈 reduced size */
+  font-weight: 700;
   color: white;
-  line-height: 1.1;
-  letter-spacing: 3px;
+
+  line-height: 1.15;
+  letter-spacing: 2px;
+}
 
   opacity: 0;
   transform: translateY(30px);
@@ -233,5 +237,6 @@ body {
   box-shadow: 0 20px 45px rgba(139, 30, 63, 0.35);
   background: #f6efdd;
 }
+
 
 
