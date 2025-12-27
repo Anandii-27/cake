@@ -297,6 +297,12 @@ body {
   font-weight: 600;
   color: #8b1e3f;
 }
+/* Left align Cake column */
+.menu-row span:first-child {
+  text-align: left;
+  color: #000;
+}
+
 
 
 
