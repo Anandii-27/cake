@@ -207,6 +207,8 @@ body {
   gap: 40px;
   max-width: 900px;
   margin: auto;
+
+  justify-items: centre;
 }
 
 /* CATEGORY CARD */
@@ -245,6 +247,7 @@ body {
 .menu-card h3 {
   margin: 0;
 }
+
 
 
 
