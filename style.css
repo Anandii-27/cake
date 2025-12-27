@@ -233,10 +233,6 @@ body {
   box-shadow: 0 20px 45px rgba(139, 30, 63, 0.35);
   background: #f6efdd;
 }
-/* Fix Dry Cakes layout */
-.menu-page .menu-card {
-  display: block;
-}
 /* Menu list container (Cupcakes / Dry Cakes) */
 .menu-list {
   max-width: 900px;
@@ -246,6 +242,10 @@ body {
   padding: 30px 40px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
+.menu-card h3 {
+  margin: 0;
+}
+
 
 
 
