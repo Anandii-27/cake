@@ -237,5 +237,15 @@ body {
 .menu-page .menu-card {
   display: block;
 }
+/* Menu list container (Cupcakes / Dry Cakes) */
+.menu-list {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px 40px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
 
 
