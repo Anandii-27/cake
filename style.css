@@ -233,4 +233,9 @@ body {
   box-shadow: 0 20px 45px rgba(139, 30, 63, 0.35);
   background: #f6efdd;
 }
+/* Fix Dry Cakes layout */
+.menu-page .menu-card {
+  display: block;
+}
+
 
