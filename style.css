@@ -189,6 +189,14 @@ body {
 .menu-page {
   text-align: center;
   padding: 120px 20px 80px;
+
+  /* cake-themed background */
+  background: linear-gradient(
+    180deg,
+    #fffaf3 0%,
+    #f6efdd 50%,
+    #fffaf3 100%
+  );
 }
 
 .menu-page h1 {
@@ -317,6 +325,7 @@ body {
   text-align: left;
   color: #000;
 }
+
 
 
 
