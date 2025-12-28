@@ -326,6 +326,21 @@ body {
   text-align: left;
   color: #000;
 }
+/* ================= MENU PAGE NAVBAR IMAGE ================= */
+.menu-only .navbar {
+  background:
+    linear-gradient(
+      rgba(255, 250, 243, 0.85),
+      rgba(255, 250, 243, 0.85)
+    ),
+    url("menu-background.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: none;
+}
+
 
 
 
