@@ -327,30 +327,19 @@ body {
   color: #000;
 }
 /* ================= MENU PAGE NAVBAR IMAGE ================= */
+/* MENU PAGE NAVBAR */
 .menu-only .navbar {
-  background:
-    linear-gradient(
-      rgba(255, 250, 243, 0.45),
-      rgba(255, 250, 243, 0.45)
-    ),
-    url("menu-background.webp");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: transparent;
   border-bottom: none;
 }
+/* ================= FULL PAGE MENU BACKGROUND ================= */
+.menu-only {
+  background:
+    linear-gradient(
+      rgba(255, 250, 243, 0.55),
+      rgba(255, 250, 243, 0.55)
+    ),
+    url("menu-background.webp") no-repeat center center fixed;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  background-size: cover;
+}
