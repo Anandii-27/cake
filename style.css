@@ -98,15 +98,19 @@ body {
   bottom: 40px;
   left: 40px;
 
-  font-size: 72px;        /* 🔥 Bigger text */
+  font-size: 72px;
   font-weight: 600;
 
   color: white;
-  line-height: 1.05;     /* tighter lines */
+  line-height: 1.05;
   letter-spacing: 4px;
+  max-width: 520px;
 
-  max-width: 520px;      /* allows wrapping nicely */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: textReveal 1.2s ease forwards;
 }
+
 
 
   opacity: 0;
@@ -325,6 +329,7 @@ body {
   text-align: left;
   color: #000;
 }
+
 
 
 
