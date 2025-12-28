@@ -185,17 +185,6 @@ body {
 .menu-page {
   text-align: center;
   padding: 120px 20px 80px;
-
-  background:
-    linear-gradient(
-      rgba(255, 250, 243, 0.45),
-      rgba(255, 250, 243, 0.45)
-    ),
-    url("menu-background.webp");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .menu-page h1 {
@@ -345,4 +334,5 @@ body {
 .menu-only {
   padding-top: 0;
 }
+
 
