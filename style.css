@@ -196,8 +196,8 @@ body {
 
   background:
     linear-gradient(
-      rgba(255, 250, 243, 0.9),
-      rgba(255, 250, 243, 0.9)
+      rgba(255, 250, 243, 0.45),
+      rgba(255, 250, 243, 0.45)
     ),
     url("menu-background.webp");
 
@@ -332,6 +332,7 @@ body {
   text-align: left;
   color: #000;
 }
+
 
 
 
