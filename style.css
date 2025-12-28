@@ -100,18 +100,16 @@ body {
 
   font-size: 72px;
   font-weight: 600;
-
   color: white;
   line-height: 1.05;
   letter-spacing: 4px;
-
   max-width: 520px;
-}
 
   opacity: 0;
   transform: translateY(30px);
   animation: textReveal 1.2s ease forwards;
 }
+
 @keyframes textReveal {
   to {
     opacity: 1;
@@ -343,3 +341,8 @@ body {
 
   background-size: cover;
 }
+/* REMOVE BODY PADDING FOR MENU PAGE */
+.menu-only {
+  padding-top: 0;
+}
+
