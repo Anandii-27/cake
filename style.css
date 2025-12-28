@@ -330,8 +330,8 @@ body {
 .menu-only .navbar {
   background:
     linear-gradient(
-      rgba(255, 250, 243, 0.85),
-      rgba(255, 250, 243, 0.85)
+      rgba(255, 250, 243, 0.45),
+      rgba(255, 250, 243, 0.45)
     ),
     url("menu-background.webp");
 
@@ -340,6 +340,7 @@ body {
   background-repeat: no-repeat;
   border-bottom: none;
 }
+
 
 
 
