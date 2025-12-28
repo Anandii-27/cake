@@ -104,20 +104,14 @@ body {
   color: white;
   line-height: 1.05;
   letter-spacing: 4px;
+
   max-width: 520px;
+}
 
   opacity: 0;
   transform: translateY(30px);
   animation: textReveal 1.2s ease forwards;
 }
-
-
-
-  opacity: 0;
-  transform: translateY(30px);
-  animation: textReveal 1.2s ease forwards;
-}
-
 @keyframes textReveal {
   to {
     opacity: 1;
@@ -332,6 +326,7 @@ body {
   text-align: left;
   color: #000;
 }
+
 
 
 
