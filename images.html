@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cake Gallery | Sandhya’s Cakes</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Sandhya’s Cakes</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="image.html">Gallery</a></li>
+  </ul>
+
+  <a href="https://wa.me/919404030979?text=Hello! I want to order a cake 🎂"
+     class="order-btn" target="_blank">
+    Order Now
+  </a>
+</nav>
+
+<!-- TITLE -->
+<section class="gallery-title">
+  <h1>Our Cake Gallery 🍰</h1>
+  <p>Fresh • Homemade • Delicious</p>
+</section>
+
+<!-- IMAGE GRID -->
+<section class="gallery-section">
+  <div class="masonry">
+
+    <div class="cake-item">
+      <img src="cake.jpeg" class="gallery-img" alt="Chocolate Truffle Cake">
+      <a href="https://wa.me/919404030979?text=Hello! I want to order the Chocolate Truffle Cake 🍰"
+         target="_blank" class="order-overlay">
+        Order on WhatsApp
+      </a>
+    </div>
+
+    <div class="cake-item">
+      <img src="cake2.jpeg" class="gallery-img" alt="Red Velvet Cake">
+      <a href="https://wa.me/919404030979?text=Hello! I want to order the Red Velvet Cake 🍰"
+         target="_blank" class="order-overlay">
+        Order on WhatsApp
+      </a>
+    </div>
+
+    <div class="cake-item">
+      <img src="cake3.jpeg" class="gallery-img" alt="Dry Fruit Cake">
+      <a href="https://wa.me/919404030979?text=Hello! I want to order the Dry Fruit Cake 🍰"
+         target="_blank" class="order-overlay">
+        Order on WhatsApp
+      </a>
+    </div>
+
+    <div class="cake-item">
+      <img src="cake4.jpeg" class="gallery-img" alt="Butterscotch Cake">
+      <a href="https://wa.me/919404030979?text=Hello! I want to order the Butterscotch Cake 🍰"
+         target="_blank" class="order-overlay">
+        Order on WhatsApp
+      </a>
+    </div>
+
+    <div class="cake-item">
+      <img src="cake5.jpeg" class="gallery-img" alt="Black Forest Cake">
+      <a href="https://wa.me/919404030979?text=Hello! I want to order the Black Forest Cake 🍰"
+         target="_blank" class="order-overlay">
+        Order on WhatsApp
+      </a>
+    </div>
+
+    <div class="cake-item">
+      <img src="cake6.jpeg" class="gallery-img" alt="Pineapple Cake">
+      <a href="https://wa.me/919404030979?text=Hello! I want to order the Pineapple Cake 🍰"
+         target="_blank" class="order-overlay">
+        Order on WhatsApp
+      </a>
+    </div>
+
+    <div class="cake-item">
+      <img src="cake7.jpeg" class="gallery-img" alt="Pineapple Cake">
+      <a href="https://wa.me/919404030979?text=Hello! I want to order the Pineapple Cake 🍰"
+         target="_blank" class="order-overlay">
+        Order on WhatsApp
+      </a>
+    </div>
+
+    <div class="cake-item">
+      <img src="cake8.jpeg" class="gallery-img" alt="Pineapple Cake">
+      <a href="https://wa.me/919404030979?text=Hello! I want to order the Pineapple Cake 🍰"
+         target="_blank" class="order-overlay">
+        Order on WhatsApp
+      </a>
+    </div>
+
+    <div class="cake-item">
+      <img src="cake9.jpeg" class="gallery-img" alt="Pineapple Cake">
+      <a href="https://wa.me/919404030979?text=Hello! I want to order the Pineapple Cake 🍰"
+         target="_blank" class="order-overlay">
+        Order on WhatsApp
+      </a>
+    </div>
+
+    <div class="cake-item">
+      <img src="cake10.jpeg" class="gallery-img" alt="Pineapple Cake">
+      <a href="https://wa.me/919404030979?text=Hello! I want to order the Pineapple Cake 🍰"
+         target="_blank" class="order-overlay">
+        Order on WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="close">&times;</span>
+  <img id="lightbox-img">
+</div>
+
+<!-- JS -->
+<script>
+  const images = document.querySelectorAll('.gallery-img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.close');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) {
+      lightbox.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
