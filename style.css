@@ -363,18 +363,19 @@ body {
 .cake-item {
   position: relative;
   break-inside: avoid;
+  margin-bottom: 20px;
 }
 
-.masonry img {
+.gallery-img {
   width: 100%;
-  margin-bottom: 20px;
   border-radius: 16px;
   cursor: pointer;
+  display: block;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
 }
 
-.masonry img:hover {
+.gallery-img:hover {
   transform: scale(1.03);
 }
 
@@ -386,15 +387,14 @@ body {
   color: white;
   font-weight: 600;
   font-size: 16px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 16px;
   text-decoration: none;
+  z-index: 2;
 }
 
 .cake-item:hover .order-overlay {
@@ -405,11 +405,9 @@ body {
 @media (max-width: 1000px) {
   .masonry { column-count: 3; }
 }
-
 @media (max-width: 700px) {
   .masonry { column-count: 2; }
 }
-
 @media (max-width: 480px) {
   .masonry { column-count: 1; }
 }
@@ -420,17 +418,16 @@ body {
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.85);
-  z-index: 2000;
-
-  display: none;        /* ✅ ONLY this */
+  z-index: 3000;
+  display: none;
   align-items: center;
   justify-content: center;
 }
+
 .lightbox img {
   max-width: 90%;
   max-height: 90%;
   border-radius: 16px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.7);
 }
 
 .lightbox .close {
@@ -442,7 +439,3 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
-
-
-
-
