@@ -334,5 +334,115 @@ body {
 .menu-only {
   padding-top: 0;
 }
+/* ================= CAKE GALLERY ================= */
+
+.gallery-title {
+  text-align: center;
+  padding: 120px 20px 40px;
+}
+
+.gallery-title h1 {
+  font-size: 42px;
+  color: #8b1e3f;
+  margin-bottom: 10px;
+}
+
+.gallery-title p {
+  opacity: 0.75;
+}
+
+/* Pinterest-style masonry */
+.masonry {
+  column-count: 4;
+  column-gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px 80px;
+}
+
+.cake-item {
+  position: relative;
+  break-inside: avoid;
+}
+
+.masonry img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.masonry img:hover {
+  transform: scale(1.03);
+}
+
+/* WhatsApp overlay */
+.order-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(139, 30, 63, 0.75);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+.cake-item:hover .order-overlay {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .masonry { column-count: 3; }
+}
+
+@media (max-width: 700px) {
+  .masonry { column-count: 2; }
+}
+
+@media (max-width: 480px) {
+  .masonry { column-count: 1; }
+}
+
+/* ================= LIGHTBOX ================= */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 16px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 
 
