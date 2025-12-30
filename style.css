@@ -439,3 +439,101 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
+/* ================= CONTACT PAGE ================= */
+
+.contact-page {
+  padding: 140px 20px 80px;
+  text-align: center;
+}
+
+.contact-page h1 {
+  font-size: 44px;
+  color: #8b1e3f;
+  margin-bottom: 10px;
+}
+
+.contact-note {
+  opacity: 0.75;
+  margin-bottom: 60px;
+}
+
+/* Layout */
+.contact-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Info box */
+.contact-info {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+.contact-info h3 {
+  color: #8b1e3f;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 12px;
+}
+
+/* WhatsApp button */
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Form */
+.contact-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+.contact-form h3 {
+  color: #8b1e3f;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form button {
+  background: #8b1e3f;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
