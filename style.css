@@ -600,3 +600,15 @@ body {
   position: relative;
   z-index: 1;
 }
+/* ================= HOME PAGE: REMOVE SCROLL ================= */
+
+.home-body {
+  height: 100vh;
+  overflow: hidden;   /* removes scroll */
+}
+
+/* Hero should fit exactly below navbar */
+.home-body .hero {
+  height: calc(100vh - 90px); /* navbar height */
+}
+
