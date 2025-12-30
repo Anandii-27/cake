@@ -439,87 +439,77 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
-/* ================= CONTACT PAGE ONLY ================= */
+/* ================= CONTACT PAGE ================= */
 
 .contact-page {
-  padding: 130px 80px 100px;
-  background: linear-gradient(
-    to right,
-    #fffaf3 0%,
-    #fffaf3 60%,
-    rgba(246, 239, 221, 0.9) 80%,
-    rgba(139, 30, 63, 0.18) 100%
-  );
-}
-
-/* Header section */
-.contact-header {
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.contact-header h1 {
-  font-size: 46px;
-  color: #8b1e3f;
-  margin-bottom: 12px;
-}
-
-.contact-header p {
-  font-size: 18px;
-  opacity: 0.75;
-}
-
-/* Center content */
-.contact-main {
+  min-height: 100vh;
+  width: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
+
+  /* Background Image */
+  background: 
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("contactback.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Contact card */
-.contact-card {
-  background: #ffffff;
-  padding: 45px 40px;
-  border-radius: 22px;
-  width: 380px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
-  text-align: left;
+/* Contact box */
+.contact-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 50px 60px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-.contact-card h3 {
+/* Heading */
+.contact-box h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 42px;
+  margin-bottom: 10px;
   color: #8b1e3f;
-  margin-bottom: 22px;
 }
 
-.contact-card p {
-  margin-bottom: 14px;
-  font-size: 15px;
+/* Subtitle */
+.contact-box p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
 }
 
-/* WhatsApp button */
-.whatsapp-btn {
-  display: inline-block;
-  margin-top: 22px;
-  padding: 12px 30px;
-  background: #25D366;
+/* Inputs */
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Button */
+.contact-box button {
+  background: #8b1e3f;
   color: white;
+  border: none;
+  padding: 14px 30px;
   border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.3s ease;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.whatsapp-btn:hover {
-  transform: translateY(-4px);
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .contact-page {
-    padding: 110px 20px 80px;
-  }
-
-  .contact-card {
-    width: 100%;
-    max-width: 360px;
-  }
+.contact-box button:hover {
+  background: #6e162f;
 }
