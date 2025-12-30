@@ -575,7 +575,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 9999;
 
   background: #fff;    /* default background for home */
 }
@@ -596,10 +596,7 @@ body {
 body {
   padding-top: 90px;   /* adjust to navbar height */
 }
-/* Transparent navbar ONLY on contact page */
-.contact-body .navbar {
-  background: transparent;
+.contact-wrapper {
+  position: relative;
+  z-index: 1;
 }
-
-
-
