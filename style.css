@@ -562,17 +562,4 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* ================= NAVBAR ================= */
-
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
-  background: transparent; /* VERY IMPORTANT */
-
-  padding: 18px 80px;
-}
-
-
 
