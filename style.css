@@ -450,20 +450,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  /* Background image + overlay */
-  background:
-    linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ),
-    url("contactback.jpg");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-
+ 
 /* ================= HEADER ================= */
 
 .contact-header {
@@ -557,4 +545,22 @@ body {
     padding: 35px 30px;
   }
 }
+/* ================= CONTACT WRAPPER BACKGROUND ================= */
+
+.contact-wrapper {
+  min-height: 100vh;
+  width: 100%;
+
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("images/contactback.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
