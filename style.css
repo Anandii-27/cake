@@ -536,4 +536,34 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* ================= CONTACT PAGE RIGHT FADE ================= */
+
+/* Contact page background container */
+.contact-page {
+  position: relative;
+  background: linear-gradient(
+    to right,
+    #fffaf3 0%,
+    #fffaf3 55%,
+    rgba(246, 239, 221, 0.8) 75%,
+    rgba(139, 30, 63, 0.18) 100%
+  );
+}
+
+/* Optional soft glow for elegance */
+.contact-page::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: radial-gradient(
+    circle at right,
+    rgba(139, 30, 63, 0.18),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
 
