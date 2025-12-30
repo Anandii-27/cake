@@ -55,15 +55,30 @@
     </div>
 
     <!-- RIGHT FORM -->
-    <form class="contact-form">
-      <h3>Send a Message</h3>
+   <div class="contact-card">
+  <h3>Give Your Feedback 💕</h3>
 
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="4" placeholder="Your Message"></textarea>
+  <form id="feedbackForm">
 
-      <button type="submit">Send Message</button>
-    </form>
+    <input type="text" placeholder="Your Name (optional)">
+
+    <select required>
+      <option value="">Rate Us ⭐</option>
+      <option>⭐⭐⭐⭐⭐ Excellent</option>
+      <option>⭐⭐⭐⭐ Good</option>
+      <option>⭐⭐ Average</option>
+      <option>⭐ Poor</option>
+    </select>
+
+    <textarea rows="5" placeholder="Write your feedback..." required></textarea>
+
+    <button type="submit">Submit Feedback</button>
+
+    <p class="thank-you" id="thankYouMsg">
+      Thank you for your feedback! 💖
+    </p>
+
+  </form>
 
   </div>
 
@@ -71,3 +86,4 @@
 
 </body>
 </html>
+
