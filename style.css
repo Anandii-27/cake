@@ -568,12 +568,18 @@ body {
 }
 
 
+/* ================= GLOBAL NAVBAR ================= */
+
 .navbar {
-  position: relative;   /* NORMAL */
+  position: fixed;     /* FIXED ON ALL PAGES */
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 10;
-  background: transparent;
+  z-index: 1000;
+
+  background: #fff;    /* default background for home */
 }
+
 .contact-body {
   height: 100vh;
   overflow: hidden;
@@ -587,5 +593,13 @@ body {
   margin: 0;
   padding: 0;
 }
+body {
+  padding-top: 90px;   /* adjust to navbar height */
+}
+/* Transparent navbar ONLY on contact page */
+.contact-body .navbar {
+  background: transparent;
+}
+
 
 
