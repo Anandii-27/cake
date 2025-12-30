@@ -548,7 +548,7 @@ body {
 /* ================= CONTACT WRAPPER BACKGROUND ================= */
 
 .contact-wrapper {
-  min-height: 100vh;
+  height: 100vh;   /* NOT min-height */
   width: 100%;
 
   background:
@@ -556,23 +556,34 @@ body {
       rgba(255, 255, 255, 0.75),
       rgba(255, 255, 255, 0.75)
     ),
-    url("contactback.jpg");
+    url("images/contactback.jpg");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-.navbar {
-  position: fixed;   /* KEY FIX */
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
 
+  overflow: hidden;   /* PREVENT SCROLL */
+}
+
+.navbar {
+  position: relative;   /* NORMAL */
+  width: 100%;
+  z-index: 10;
   background: transparent;
 }
+
 .contact-page {
-  padding-top: 140px;  /* space for navbar */
+  flex: 1;
+  padding: 60px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  margin: 0;
+  overflow: hidden;
 }
 
 
