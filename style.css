@@ -439,100 +439,87 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
-/* ================= CONTACT PAGE ================= */
+/* ================= CONTACT PAGE ONLY ================= */
 
 .contact-page {
-  padding: 140px 20px 80px;
+  padding: 130px 80px 100px;
+  background: linear-gradient(
+    to right,
+    #fffaf3 0%,
+    #fffaf3 60%,
+    rgba(246, 239, 221, 0.9) 80%,
+    rgba(139, 30, 63, 0.18) 100%
+  );
+}
+
+/* Header section */
+.contact-header {
   text-align: center;
+  margin-bottom: 70px;
 }
 
-.contact-page h1 {
-  font-size: 44px;
+.contact-header h1 {
+  font-size: 46px;
   color: #8b1e3f;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-.contact-note {
+.contact-header p {
+  font-size: 18px;
   opacity: 0.75;
-  margin-bottom: 60px;
 }
 
-/* Layout */
-.contact-wrapper {
-  max-width: 1000px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+/* Center content */
+.contact-main {
+  display: flex;
+  justify-content: center;
 }
 
-/* Info box */
-.contact-info {
+/* Contact card */
+.contact-card {
   background: #ffffff;
-  padding: 30px;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  padding: 45px 40px;
+  border-radius: 22px;
+  width: 380px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
   text-align: left;
 }
 
-.contact-info h3 {
+.contact-card h3 {
   color: #8b1e3f;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
-.contact-info p {
-  margin-bottom: 12px;
+.contact-card p {
+  margin-bottom: 14px;
+  font-size: 15px;
 }
 
 /* WhatsApp button */
 .whatsapp-btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 22px;
+  padding: 12px 30px;
   background: #25D366;
   color: white;
-  padding: 12px 22px;
-  border-radius: 25px;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
+  transition: transform 0.3s ease;
 }
 
-/* Form */
-.contact-form {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-  text-align: left;
+.whatsapp-btn:hover {
+  transform: translateY(-4px);
 }
 
-.contact-form h3 {
-  color: #8b1e3f;
-  margin-bottom: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px 14px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  font-family: 'Poppins', sans-serif;
-}
-
-.contact-form button {
-  background: #8b1e3f;
-  color: white;
-  border: none;
-  padding: 12px 22px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-/* Responsive */
+/* Mobile */
 @media (max-width: 768px) {
-  .contact-wrapper {
-    grid-template-columns: 1fr;
+  .contact-page {
+    padding: 110px 20px 80px;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 360px;
   }
 }
