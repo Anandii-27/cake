@@ -578,4 +578,14 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+/* Contact page navbar fix */
+.contact-body .navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.contact-body {
+  margin: 0;
+  padding: 0;
+}
+
 
