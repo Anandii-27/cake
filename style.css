@@ -600,15 +600,32 @@ body {
   position: relative;
   z-index: 1;
 }
-/* ================= HOME PAGE: REMOVE SCROLL ================= */
+/* ================= HOME PAGE: ABSOLUTELY NO SCROLL ================= */
 
 .home-body {
   height: 100vh;
-  overflow: hidden;   /* removes scroll */
+  overflow: hidden;        /* kill scroll */
+  margin: 0;
+  padding-top: 90px;       /* space for fixed navbar */
+  box-sizing: border-box;
 }
 
-/* Hero should fit exactly below navbar */
+/* Hero fits exactly in remaining space */
 .home-body .hero {
-  height: calc(100vh - 90px); /* navbar height */
+  height: calc(100vh - 90px);
+  overflow: hidden;        /* prevent internal overflow */
+  display: flex;
 }
 
+/* Prevent images from causing overflow */
+.home-body .hero img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Remove any default margins */
+.home-body * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
