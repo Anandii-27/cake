@@ -618,14 +618,14 @@ body {
 }
 
 /* Prevent images from causing overflow */
-.home-body .hero img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
+.home-body .hero-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 /* Remove any default margins */
 .home-body * {
   margin-top: 0;
   margin-bottom: 0;
 }
+
