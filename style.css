@@ -439,77 +439,121 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
-/* ================= CONTACT PAGE ================= */
+/* ================= CONTACT PAGE BACKGROUND ================= */
 
 .contact-page {
   min-height: 100vh;
   width: 100%;
+  padding: 120px 20px 80px;
+
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  /* Background Image */
-  background: 
+  /* Background image + overlay */
+  background:
     linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
     ),
-    url("contactback.jpg");
+    url("images/contactback.jpg");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Contact box */
-.contact-box {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 50px 60px;
-  border-radius: 20px;
-  max-width: 600px;
-  width: 100%;
+/* ================= HEADER ================= */
+
+.contact-header {
   text-align: center;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
 }
 
-/* Heading */
-.contact-box h1 {
+.contact-header h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 42px;
-  margin-bottom: 10px;
+  font-size: 46px;
   color: #8b1e3f;
+  margin-bottom: 10px;
 }
 
-/* Subtitle */
-.contact-box p {
+.contact-header p {
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #555;
-  margin-bottom: 30px;
 }
 
-/* Inputs */
-.contact-box input,
-.contact-box textarea {
+/* ================= MAIN CONTENT ================= */
+
+.contact-main {
   width: 100%;
-  padding: 14px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+}
+
+/* ================= CARD ================= */
+
+.contact-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 45px 55px;
+  border-radius: 22px;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
+}
+
+.contact-card h3 {
+  font-size: 24px;
+  color: #8b1e3f;
+  margin-bottom: 25px;
   font-family: 'Poppins', sans-serif;
 }
 
-/* Button */
-.contact-box button {
-  background: #8b1e3f;
-  color: white;
-  border: none;
+.contact-card p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+/* ================= WHATSAPP BUTTON ================= */
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 25px;
   padding: 14px 30px;
+
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
   border-radius: 30px;
-  font-size: 16px;
-  cursor: pointer;
+  font-weight: 500;
+
   transition: 0.3s ease;
 }
 
-.contact-box button:hover {
-  background: #6e162f;
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+  transform: translateY(-2px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 36px;
+  }
+
+  .contact-card {
+    padding: 35px 30px;
+  }
 }
