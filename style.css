@@ -184,8 +184,10 @@ body {
 /* ================= MENU PAGE ================= */
 .menu-page {
   text-align: center;
-  padding: 120px 20px 80px;
+  padding: 140px 20px 100px;
+  position: relative;
 }
+
 
 .menu-page h1 {
   font-size: 44px;
@@ -211,11 +213,17 @@ body {
 
 /* CATEGORY CARD */
 .menu-card {
-  height: 140px;
+  height: 150px;
   width: 100%;
-  background: #ffffff;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+
+  background: linear-gradient(
+    145deg,
+    #ffffff 0%,
+    #fff7ea 60%,
+    #ffffff 100%
+  );
+
+  border-radius: 22px;
 
   display: flex;
   align-items: center;
@@ -225,13 +233,24 @@ body {
   color: #8b1e3f;
   font-size: 22px;
   font-weight: 600;
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.12),
+    inset 0 0 0 1px rgba(139, 30, 63, 0.08);
+
   transition: all 0.35s ease;
 }
 
 .menu-card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 20px 45px rgba(139, 30, 63, 0.35);
-  background: #f6efdd;
+  transform: translateY(-12px) scale(1.05);
+  box-shadow:
+    0 30px 60px rgba(139, 30, 63, 0.30);
+  background:
+    linear-gradient(
+      145deg,
+      #fff5f8 0%,
+      #f6efdd 100%
+    );
 }
 
 .menu-card h3 {
@@ -628,5 +647,49 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+/* ================= MENU PAGE BACKGROUND ================= */
+
+.menu-only {
+  min-height: 100vh;
+  padding-top: 90px; /* space for fixed navbar */
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(139, 30, 63, 0.10),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(246, 239, 221, 0.9),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #fffaf3 0%,
+      #f6efdd 100%
+    );
+}
+.menu-only::before,
+.menu-only::after {
+  content: "";
+  position: fixed;
+  width: 260px;
+  height: 260px;
+  background: rgba(139, 30, 63, 0.15);
+  filter: blur(120px);
+  z-index: -1;
+}
+
+.menu-only::before {
+  top: 120px;
+  left: 80px;
+}
+
+.menu-only::after {
+  bottom: 100px;
+  right: 80px;
+}
+
 
 
